@@ -1,0 +1,22 @@
+
+{
+  "name": "challenge-generator-job",
+  "version": "1.0.0",
+  "description": "A scheduled job to generate personalized challenges for users.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "prestart": "npm run build"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google/genai": "^1.13.0",
+    "firebase-admin": "^12.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.2",
+    "@types/node": "^20.14.8"
+  }
+}

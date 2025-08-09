@@ -1,0 +1,4 @@
+{
+  "name": "Personalized Daily Challenge Generator",
+  "description": "A scheduled task that reads user data from Firestore, uses the Gemini API to generate a unique daily challenge for each user, and saves it back to Firestore."
+}
