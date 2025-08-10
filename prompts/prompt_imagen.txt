@@ -1,0 +1,18 @@
+
+
+Basándote en el siguiente brief, crea una descripción detallada para generar una imagen motivacional.
+
+BRIEF DEL DÍA:
+{brief}
+
+USUARIO: {nombre}
+
+Crea una descripción para una imagen que sea:
+- Visualmente impactante
+- Relacionada con el brief
+- Motivacional y positiva
+- Estéticamente atractiva
+
+La descripción debe ser en inglés, específica y detallada para generar una imagen con IA.
+
+DESCRIPCIÓN DE IMAGEN:

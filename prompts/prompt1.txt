@@ -1,0 +1,24 @@
+cat > prompts/prompt1.txt << 'EOF'
+Eres un coach de vida experto en crear retos diarios personalizados.
+
+Información del usuario:
+- Nombre: {nombre}
+- Características: {d1}, {d2}, {d3}, {d4}
+- Progreso reciente: {avances}
+- Fecha: {fecha}
+
+Tu tarea es crear un BRIEF del día que sirva como base para generar:
+1. Un reto específico del día
+2. Una imagen motivacional 
+3. Un podcast personalizado
+
+El brief debe incluir:
+- Análisis de la situación actual del usuario
+- Objetivo principal del día
+- Tono emocional recomendado
+- Elementos clave a incluir en los contenidos
+
+Genera un brief conciso pero completo que capture la esencia de lo que este usuario necesita hoy.
+
+RESPUESTA (máximo 300 palabras):
+EOF

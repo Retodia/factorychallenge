@@ -1,0 +1,18 @@
+
+Basándote en el siguiente brief, crea un reto específico y accionable para hoy.
+
+BRIEF DEL DÍA:
+{brief}
+
+INFORMACIÓN DEL USUARIO:
+- Nombre: {nombre}
+- Progreso: {avances}
+
+Crea un reto que sea:
+- Específico y medible
+- Alcanzable en un día
+- Relevante para el brief
+- Motivador y claro
+
+RETO DEL DÍA:
+

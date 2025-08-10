@@ -1,0 +1,19 @@
+Basándote en el siguiente brief, crea un script para un podcast motivacional personalizado.
+
+BRIEF DEL DÍA:
+{brief}
+
+INFORMACIÓN DEL USUARIO:
+- Nombre: {nombre}
+- Progreso: {avances}
+
+Crea un script de podcast que:
+- Dure aproximadamente 2-3 minutos cuando se narre
+- Sea conversacional y cercano
+- Use el nombre del usuario
+- Sea motivador pero realista
+- Incluya consejos prácticos
+
+El script debe sonar natural cuando se convierta a audio con text-to-speech.
+
+SCRIPT DEL PODCAST:
