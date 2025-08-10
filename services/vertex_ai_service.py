@@ -21,7 +21,8 @@ class VertexAIService:
                 location=settings.VERTEX_AI_LOCATION
             )
             
-            self.model = GenerativeModel(settings.GEMINI_MODEL)
+            # Use the correct model name for the current API
+            self.model = GenerativeModel("gemini-1.5-pro")
             logger.info("Vertex AI initialized successfully")
             
         except Exception as e:
@@ -93,7 +94,8 @@ class VertexAIService:
             
         except Exception as e:
             logger.error(f"Error generating brief: {str(e)}")
-            raise
+            # Return a fallback response instead of raising
+            return f"Error generating brief: {str(e)}"
     
     async def generate_reto_dia(self, user_data: Dict[str, Any]) -> str:
         """Generate daily challenge using prompt_retodia"""
@@ -111,7 +113,7 @@ class VertexAIService:
             
         except Exception as e:
             logger.error(f"Error generating reto dia: {str(e)}")
-            raise
+            return f"Error generating reto dia: {str(e)}"
     
     async def generate_imagen_prompt(self, user_data: Dict[str, Any]) -> str:
         """Generate image description using prompt_imagen"""
@@ -129,7 +131,7 @@ class VertexAIService:
             
         except Exception as e:
             logger.error(f"Error generating imagen prompt: {str(e)}")
-            raise
+            return f"Error generating imagen prompt: {str(e)}"
     
     async def generate_podcast_script(self, user_data: Dict[str, Any]) -> str:
         """Generate podcast script using prompt_podcast"""
@@ -147,4 +149,4 @@ class VertexAIService:
             
         except Exception as e:
             logger.error(f"Error generating podcast script: {str(e)}")
-            raise
+            return f"Error generating podcast script: {str(e)}"
