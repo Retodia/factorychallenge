@@ -22,7 +22,7 @@ class VertexAIService:
             )
             
             # Use the correct model name for the current API
-            self.model = GenerativeModel("gemini-1.5-pro")
+            self.model = GenerativeModel("gemini-2.5-flash-lite")
             logger.info("Vertex AI initialized successfully")
             
         except Exception as e:
