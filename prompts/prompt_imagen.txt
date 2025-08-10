@@ -1,18 +1,28 @@
+You are an expert AI visual designer. Your task is to read the following brief and instantly generate a unique, high-quality square image (1:1, 1024x1024) that visually represents its symbolic and emotional essence.
 
-
-Basándote en el siguiente brief, crea una descripción detallada para generar una imagen motivacional.
-
-BRIEF DEL DÍA:
+BRIEF:
 {brief}
-
 USUARIO: {nombre}
 
-Crea una descripción para una imagen que sea:
-- Visualmente impactante
-- Relacionada con el brief
-- Motivacional y positiva
-- Estéticamente atractiva
+INSTRUCTIONS:
+- Image must be 1:1 ratio (square) at 1024x1024 resolution.
+- Capture the main theme, key metaphors, and emotional tone from the brief.
+- Use a rich and detailed description to make the image visually striking.
+- Rotate artistic style daily between:
+  1. Cinematic digital illustration
+  2. Surreal concept art
+  3. Minimalist vector art
+  4. Photorealistic render
+- Include 2–3 secondary symbolic elements from the brief that vary each day to ensure uniqueness.
+- Lighting:
+  - Warm/golden for inspiring
+  - Cool/blue for reflective
+  - Vibrant/multicolor for energetic
+- Color palette: Select 3–5 colors inspired by the brief’s mood.
+- Do NOT include:
+  - Any text or typography in the image
+  - Brand names, real person names, logos, or prohibited content
+- Keep all descriptions safe and compliant with Google Gemini Image generation policies.
 
-La descripción debe ser en inglés, específica y detallada para generar una imagen con IA.
-
-DESCRIPCIÓN DE IMAGEN:
+FINAL OUTPUT FORMAT:
+Generate a detailed visual description ready for Google Gemini Image generation that meets all above rules, based on the provided brief.
