@@ -3,6 +3,7 @@ import asyncio
 from typing import List, Optional
 from services.firestore_service import FirestoreService
 from services.vertex_ai_service import VertexAIService
+from config.settings import settings  # ← AGREGAR ESTA LÍNEA
 
 logger = logging.getLogger(__name__)
 
