@@ -1,24 +1,64 @@
-cat > prompts/prompt1.txt << 'EOF'
-Eres un coach de vida experto en crear retos diarios personalizados.
+PROMPT – Contexto del Reto Diario Fractal
+Usuario: {nombre}
+Fecha: {fecha}
 
-Información del usuario:
-- Nombre: {nombre}
-- Características: {d1}, {d2}, {d3}, {d4}
-- Progreso reciente: {avances}
-- Fecha: {fecha}
+Datos base:
 
-Tu tarea es crear un BRIEF del día que sirva como base para generar:
-1. Un reto específico del día
-2. Una imagen motivacional 
-3. Un podcast personalizado
+{d1} = lista de valores/rasgos del Yo
 
-El brief debe incluir:
-- Análisis de la situación actual del usuario
-- Objetivo principal del día
-- Tono emocional recomendado
-- Elementos clave a incluir en los contenidos
+{d2} = lista de herramientas/soportes
 
-Genera un brief conciso pero completo que capture la esencia de lo que este usuario necesita hoy.
+{d3} = lista de áreas funcionales
 
-RESPUESTA (máximo 300 palabras):
-EOF
+{d4} = lista de procesos del Sistema Operativo Interno
+
+Reglas de selección (IA)
+Elige dos distintos por cada lista:
+
+{d1_valor1}, {d1_valor2} ∈ d1
+
+{d2_herramienta1}, {d2_herramienta2} ∈ d2
+
+{d3_area1}, {d3_area2} ∈ d3
+
+{d4_proceso1}, {d4_proceso2} ∈ d4
+
+Evita duplicados y sinónimos casi idénticos.
+
+Prioriza elementos que conecten con avances.
+
+Ajusta artículos/preposiciones por género/número (p. ej., en la mente, en el cuerpo, con la familia).
+
+Tono: claro, motivador, sin “palabra de moda” vacía.
+
+1. Título evocador
+Combina {d1_valor1} y {d1_valor2} con {d2_herramienta1} y {d2_herramienta2}, añadiendo un matiz emocional o simbólico relacionado con {d3_area1} o {d3_area2}.
+
+2. Reto del día
+Construye una frase con dos elementos de cada dimensión fractal, manteniendo sentido gramatical y resonancia emocional:
+
+“Desde mi {d1_valor1} y {d1_valor2}, usando {d2_herramienta1} y {d2_herramienta2}, actúo en {d3_area1} y {d3_area2} siguiendo {d4_proceso1} y {d4_proceso2}.”
+
+3. Efecto dominó
+[{d2_herramienta1} aplicado en {d3_area1}] → [{d1_valor1} se fortalece y potencia {d3_area2}] → [{d2_herramienta2} impulsa {d1_valor2}] → [{d4_proceso1} y {d4_proceso2} integran y sostienen el resultado]
+
+4. Explicación por dimensiones fractales
+Dimensión 1 – El Yo: cómo {d1_valor1} y {d1_valor2} expresan el propósito del día.
+
+Dimensión 2 – Transversal: cómo {d2_herramienta1} y {d2_herramienta2} se aplican en este contexto.
+
+Dimensión 3 – Áreas Funcionales: interacción bidireccional entre {d3_area1} y {d3_area2}.
+
+Dimensión 4 – Módulos Fractales: cómo {d4_proceso1} y {d4_proceso2} sostienen y escalan el reto.
+
+5. Componentes usados
+Yo/Valores: {d1_valor1}, {d1_valor2}
+
+Herramientas/Soportes: {d2_herramienta1}, {d2_herramienta2}
+
+Áreas Funcionales: {d3_area1}, {d3_area2}
+
+Procesos del S.O.: {d4_proceso1}, {d4_proceso2}
+
+6. Investigación – Impacto en el desarrollo humano
+Explica cómo la combinación de {d1_valor1}, {d1_valor2}, {d2_herramienta1}, {d2_herramienta2}, {d3_area1}, {d3_area2}, {d4_proceso1} y {d4_proceso2} contribuye al desarrollo humano del usuario, fortaleciendo capacidades cognitivas, emocionales, físicas y relacionales, y generando transferencia a otras áreas de su vida.
