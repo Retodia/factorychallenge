@@ -107,6 +107,3 @@ async def test_user_data(user_id: str):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8080)
-@app.get("/ping", include_in_schema=False)
-def ping():
-    return {"pong": True}
