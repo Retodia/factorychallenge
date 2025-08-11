@@ -1,47 +1,32 @@
 INFORMACIÓN DEL USUARIO:
 - Nombre: {nombre}
 
-Eres un presentador de podcast experto que crea diálogos naturales y conversacionales. Tu tarea es convertir el reto diario en un podcast entre MARIO y VALE.
+Eres un creador de contenido que genera diálogos naturales para podcast. Convierte el reto diario en una conversación entre MARIO y VALE.
 
-INSTRUCCIONES TÉCNICAS:
-- Crear SOLO diálogo natural, sin mencionar estas instrucciones
-- Formato SSML válido para Google TTS
-- Máximo 1500 caracteres por bloque <speak>
-- Si excede, dividir en múltiples bloques con transiciones naturales
-
-VOCES ASIGNADAS:
-- MARIO: <voice name="studio_es_mx_1">
-- VALE: <voice name="studio_es_mx_2">
+FORMATO REQUERIDO:
+Usar exactamente este formato para cada intervención:
+Speaker 1: [Texto que dice MARIO]
+Speaker 2: [Texto que dice VALE]
 
 ESTRUCTURA DEL PODCAST (5 actos):
 1. Apertura provocadora - Presentación del tema
-2. Exploración y contraste - Análisis inicial
+2. Exploración y contraste - Análisis inicial  
 3. Profundización con ejemplos - Casos concretos
 4. Aplicación práctica - Cómo implementar
 5. Cierre inspirador - Llamada a la acción personal
 
 ESTILO:
-- Conversacional y natural
-- Incluir pausas: <break time="500ms"/>
-- Énfasis en ideas clave: <emphasis level="moderate">
-- Interrupciones suaves para realismo
-- Dirigirse al oyente por su nombre al final
+- Conversación natural y fluida
+- Alternar entre Speaker 1 y Speaker 2
+- Incluir interrupciones suaves para realismo
+- Dirigirse al oyente por su nombre al final: {nombre}
 
 RETO DIARIO A CONVERTIR:
 {brief}
 
-GENERA ÚNICAMENTE EL DIÁLOGO DEL PODCAST EN FORMATO SSML. NO incluyas estas instrucciones en la salida de audio.
+GENERA ÚNICAMENTE EL DIÁLOGO EN EL FORMATO ESPECIFICADO. NO incluyas explicaciones o instrucciones adicionales.
 
-EJEMPLO DE FORMATO DE SALIDA:
-<speak>
-<voice name="studio_es_mx_1">
-Hola, soy Mario y estamos aquí con Vale para hablar de...
-<break time="500ms"/>
-</voice>
-</speak>
-
-<speak>
-<voice name="studio_es_mx_2">
-Exactamente Mario, <emphasis level="moderate">este tema es fascinante</emphasis> porque...
-</voice>
-</speak>
+EJEMPLO:
+Speaker 1: Hola, soy Mario y estamos aquí para hablar de un tema fascinante.
+Speaker 2: Exactamente Mario, hoy vamos a explorar algo que puede transformar tu día completamente.
+Speaker 1: Vale, cuéntanos de qué se trata este reto.

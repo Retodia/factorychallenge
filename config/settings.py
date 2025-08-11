@@ -66,3 +66,5 @@ def get_storage_path(folder: str, user_id: str, filename: str) -> str:
     from datetime import datetime
     today = datetime.now().strftime("%Y-%m-%d")
     return f"{folder}/{user_id}/{today}/{filename}"
+# Gemini TTS Configuration
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyDHVfIFVjEGGpbPdbcv9S-qmMXdu8iG3SI')
