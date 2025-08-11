@@ -5,3 +5,7 @@
 credentials/
 *.json
 .env*
+credentials/
+*.json
+.env*
+serviceAccountKey.json
