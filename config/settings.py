@@ -3,7 +3,7 @@ from pydantic import Field
 
 class Settings(BaseSettings):
     LOG_LEVEL: str = Field(default="INFO", validation_alias="LOG_LEVEL")
-    STORAGE_BUCKET: str = Field(default="challengefactory-68021.appspot.com", validation_alias="STORAGE_BUCKET")
+    STORAGE_BUCKET: str = Field(default="challengefactory-68021.firebasestorage.app", validation_alias="STORAGE_BUCKET")
     
     # Alias para tomar el valor desde GOOGLE_CLOUD_PROJECT del .env
     PROJECT_ID: str = Field(default="challengefactory-68021", validation_alias="GOOGLE_CLOUD_PROJECT")
