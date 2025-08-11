@@ -21,11 +21,14 @@ class Settings(BaseSettings):
     FIREBASE_STORAGE_BUCKET: str | None = Field(default=None, validation_alias="FIREBASE_STORAGE_BUCKET")
     GCS_BUCKET: str | None = Field(default=None, validation_alias="GCS_BUCKET")
     
-    # ✅ FIRESTORE COLLECTIONS - AGREGADO
+    # ✅ TODAS LAS FIRESTORE COLLECTIONS
     COLLECTION_USERS: str = Field(default="users")
     COLLECTION_RETOS_DIARIOS: str = Field(default="retosdiarios")
+    COLLECTION_INFOUSER: str = Field(default="infouser")
+    COLLECTION_AVANCES: str = Field(default="avances")
+    COLLECTION_RETOS: str = Field(default="retos")
     
-    # ✅ OTROS SETTINGS QUE PODRÍAN SER NECESARIOS
+    # ✅ GEMINI API KEY (alias para compatibilidad)
     GEMINI_API_KEY: str | None = Field(default=None, validation_alias="GEMINI_API_KEY")
 
     model_config = SettingsConfigDict(
