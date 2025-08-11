@@ -5,6 +5,13 @@ uvicorn>=0.35,<1.0
 google-genai==1.29.0
 httpx>=0.28.1,<1.0.0
 pydantic>=2.7,<3
-firebase-admin>=6.5.0
 pydantic-settings>=2.2.1
-google-cloud-aiplatform>=1.66.0
+
+firebase-admin>=6.9.0
+google-cloud-aiplatform>=1.108.0
+google-cloud-storage>=2.19.0
+google-api-python-client>=2.178.0
+google-auth-httplib2>=0.2.0
+grpc-google-iam-v1>=0.14.2
+shapely>=2.1.1
+python-dotenv>=1.1.1
