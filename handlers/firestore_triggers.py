@@ -15,9 +15,9 @@ class FirestoreTriggersHandler:
     def __init__(self):
         self.firestore_service = FirestoreService()
         self.vertex_ai_service = VertexAIService()
-        self.imagen_service = ImagenService()
-        self.tts_service = TTSService()
-        self.storage_service = StorageService()
+        self.storage_service = StorageService()  # ✅ CREAR PRIMERO
+        self.imagen_service = ImagenService(self.storage_service, model_name="imagen-3.0-generate-002")  # ✅ PASAR storage_service
+        self.tts_service = TTSService(self.storage_service)  # ✅ PASAR storage_service
     
     async def process_reto_dia(self, user_data: Dict[str, Any], doc_id: str) -> bool:
         """Process prompt 2 - Generate reto del día"""
